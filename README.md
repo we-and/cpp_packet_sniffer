@@ -1,7 +1,7 @@
 # Telnet Sniffer
 
 This is a C++ program that uses Telnet to send commands and `libpcap` to sniff network packets. It’s designed for high-speed packet sniffing and sending commands via Telnet.
-Demo: https://youtu.be/Lwv3TNJIXnU
+Demo: [https://youtu.be/Lwv3TNJIXnU](https://youtu.be/BXXeTuDb_Mg)
 ## Features
 
 - Connects to a Telnet server and sends commands.
