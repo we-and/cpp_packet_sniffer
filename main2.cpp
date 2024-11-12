@@ -39,8 +39,8 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
     inet_ntop(AF_INET, &(ip_header->ip_dst), dest_ip, INET_ADDRSTRLEN);
     
     printf("Packet captured - Source: %s:%d -> Destination: %s:%d\n",
-           source_ip, ntohs(tcp_header->source),
-           dest_ip, ntohs(tcp_header->dest));
+           source_ip, ntohs(tcp_header->th_sport),  // Changed from source to th_sport
+           dest_ip, ntohs(tcp_header->th_dport));   // Changed from dest to th_dport
 }
 
 // Signal handler for graceful shutdown
