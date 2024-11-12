@@ -72,7 +72,7 @@ void startSniffing(const std::string& iface) {
 }
 
 int main() {
-    std::string telnetIp = "192.168.1.10"; // Replace with your Telnet server IP
+    std::string telnetIp ="localhost";;// "192.168.1.10"; // Replace with your Telnet server IP
     std::string iface = "eth0"; // Replace with your network interface
 
     // Connect to Telnet
